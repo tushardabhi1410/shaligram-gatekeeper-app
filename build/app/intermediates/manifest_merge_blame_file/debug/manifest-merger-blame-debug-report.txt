@@ -1,0 +1,556 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.realtyx.shaligramgatekeeper"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="33" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->/home/midnight/Flutter_Projects/shaligramgatekeeper/android/app/src/main/AndroidManifest.xml:5:5-66
+15-->/home/midnight/Flutter_Projects/shaligramgatekeeper/android/app/src/main/AndroidManifest.xml:5:22-64
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->/home/midnight/Flutter_Projects/shaligramgatekeeper/android/app/src/main/AndroidManifest.xml:4:5-78
+16-->/home/midnight/Flutter_Projects/shaligramgatekeeper/android/app/src/main/AndroidManifest.xml:4:22-76
+17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+17-->/home/midnight/Flutter_Projects/shaligramgatekeeper/android/app/src/main/AndroidManifest.xml:6:5-79
+17-->/home/midnight/Flutter_Projects/shaligramgatekeeper/android/app/src/main/AndroidManifest.xml:6:22-77
+18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+18-->/home/midnight/Flutter_Projects/shaligramgatekeeper/android/app/src/main/AndroidManifest.xml:7:5-80
+18-->/home/midnight/Flutter_Projects/shaligramgatekeeper/android/app/src/main/AndroidManifest.xml:7:22-78
+19    <uses-permission android:name="android.permission.CAMERA" />
+19-->/home/midnight/Flutter_Projects/shaligramgatekeeper/android/app/src/main/AndroidManifest.xml:8:5-64
+19-->/home/midnight/Flutter_Projects/shaligramgatekeeper/android/app/src/main/AndroidManifest.xml:8:22-62
+20
+21    <uses-feature android:name="android.hardware.camera" />
+21-->/home/midnight/Flutter_Projects/shaligramgatekeeper/android/app/src/main/AndroidManifest.xml:9:5-59
+21-->/home/midnight/Flutter_Projects/shaligramgatekeeper/android/app/src/main/AndroidManifest.xml:9:19-57
+22
+23    <uses-permission android:name="android.permission.WAKE_LOCK" />
+23-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-68
+23-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-65
+24    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+24-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-79
+24-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-76
+25
+26    <queries>
+26-->[:file_picker] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/file_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-17:15
+27        <intent>
+27-->[:file_picker] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/file_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:12:9-16:18
+28            <action android:name="android.intent.action.GET_CONTENT" />
+28-->[:file_picker] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/file_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-72
+28-->[:file_picker] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/file_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:13:21-69
+29
+30            <data android:mimeType="*/*" />
+30-->[:file_picker] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/file_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-44
+30-->[:file_picker] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/file_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:15:19-41
+31        </intent>
+32    </queries>
+33
+34    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+34-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-81
+34-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-78
+35    <uses-permission android:name="android.permission.VIBRATE" />
+35-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-66
+35-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-63
+36    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+36-->[:flutter_local_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-81
+36-->[:flutter_local_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-78
+37    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+37-->[:flutter_local_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-79
+37-->[:flutter_local_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:12:22-76
+38    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+38-->[:flutter_local_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-77
+38-->[:flutter_local_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:13:22-74
+39    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+39-->[com.google.firebase:firebase-messaging:23.1.1] /home/midnight/.gradle/caches/transforms-3/66de4305226ff0cb8bffa4b4ba4a8b75/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:28:5-82
+39-->[com.google.firebase:firebase-messaging:23.1.1] /home/midnight/.gradle/caches/transforms-3/66de4305226ff0cb8bffa4b4ba4a8b75/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:28:22-79
+40    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+40-->[com.google.android.gms:play-services-measurement-api:21.2.0] /home/midnight/.gradle/caches/transforms-3/9fe8d1b46c71e9b954a639d6f927ec09/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:25:5-79
+40-->[com.google.android.gms:play-services-measurement-api:21.2.0] /home/midnight/.gradle/caches/transforms-3/9fe8d1b46c71e9b954a639d6f927ec09/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:25:22-76
+41    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+41-->[com.google.android.gms:play-services-measurement:21.2.0] /home/midnight/.gradle/caches/transforms-3/847b32b408afbc752888409c4ca8a94a/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:26:5-110
+41-->[com.google.android.gms:play-services-measurement:21.2.0] /home/midnight/.gradle/caches/transforms-3/847b32b408afbc752888409c4ca8a94a/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:26:22-107
+42
+43    <permission
+43-->[androidx.core:core:1.9.0] /home/midnight/.gradle/caches/transforms-3/50ac565c2d78ece85381646878fcb457/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+44        android:name="com.realtyx.shaligramgatekeeper.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+44-->[androidx.core:core:1.9.0] /home/midnight/.gradle/caches/transforms-3/50ac565c2d78ece85381646878fcb457/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+45        android:protectionLevel="signature" />
+45-->[androidx.core:core:1.9.0] /home/midnight/.gradle/caches/transforms-3/50ac565c2d78ece85381646878fcb457/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+46
+47    <uses-permission android:name="com.realtyx.shaligramgatekeeper.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- for android -->
+47-->[androidx.core:core:1.9.0] /home/midnight/.gradle/caches/transforms-3/50ac565c2d78ece85381646878fcb457/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+47-->[androidx.core:core:1.9.0] /home/midnight/.gradle/caches/transforms-3/50ac565c2d78ece85381646878fcb457/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+48    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+49    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+50    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+51    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+52    <!-- for Samsung -->
+53    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+53-->[me.leolin:ShortcutBadger:1.1.22] /home/midnight/.gradle/caches/transforms-3/fa3ee9ef68932b9e2c37798d20dfe55d/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:5-86
+53-->[me.leolin:ShortcutBadger:1.1.22] /home/midnight/.gradle/caches/transforms-3/fa3ee9ef68932b9e2c37798d20dfe55d/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:22-83
+54    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+54-->[me.leolin:ShortcutBadger:1.1.22] /home/midnight/.gradle/caches/transforms-3/fa3ee9ef68932b9e2c37798d20dfe55d/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:5-87
+54-->[me.leolin:ShortcutBadger:1.1.22] /home/midnight/.gradle/caches/transforms-3/fa3ee9ef68932b9e2c37798d20dfe55d/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:22-84
+55    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+55-->[me.leolin:ShortcutBadger:1.1.22] /home/midnight/.gradle/caches/transforms-3/fa3ee9ef68932b9e2c37798d20dfe55d/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:5-81
+55-->[me.leolin:ShortcutBadger:1.1.22] /home/midnight/.gradle/caches/transforms-3/fa3ee9ef68932b9e2c37798d20dfe55d/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:22-78
+56    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+56-->[me.leolin:ShortcutBadger:1.1.22] /home/midnight/.gradle/caches/transforms-3/fa3ee9ef68932b9e2c37798d20dfe55d/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:5-83
+56-->[me.leolin:ShortcutBadger:1.1.22] /home/midnight/.gradle/caches/transforms-3/fa3ee9ef68932b9e2c37798d20dfe55d/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:22-80
+57    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+57-->[me.leolin:ShortcutBadger:1.1.22] /home/midnight/.gradle/caches/transforms-3/fa3ee9ef68932b9e2c37798d20dfe55d/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:5-88
+57-->[me.leolin:ShortcutBadger:1.1.22] /home/midnight/.gradle/caches/transforms-3/fa3ee9ef68932b9e2c37798d20dfe55d/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:22-85
+58    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+58-->[me.leolin:ShortcutBadger:1.1.22] /home/midnight/.gradle/caches/transforms-3/fa3ee9ef68932b9e2c37798d20dfe55d/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:5-92
+58-->[me.leolin:ShortcutBadger:1.1.22] /home/midnight/.gradle/caches/transforms-3/fa3ee9ef68932b9e2c37798d20dfe55d/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:22-89
+59    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+59-->[me.leolin:ShortcutBadger:1.1.22] /home/midnight/.gradle/caches/transforms-3/fa3ee9ef68932b9e2c37798d20dfe55d/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:5-84
+59-->[me.leolin:ShortcutBadger:1.1.22] /home/midnight/.gradle/caches/transforms-3/fa3ee9ef68932b9e2c37798d20dfe55d/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:22-81
+60    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+60-->[me.leolin:ShortcutBadger:1.1.22] /home/midnight/.gradle/caches/transforms-3/fa3ee9ef68932b9e2c37798d20dfe55d/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:5-83
+60-->[me.leolin:ShortcutBadger:1.1.22] /home/midnight/.gradle/caches/transforms-3/fa3ee9ef68932b9e2c37798d20dfe55d/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:22-80
+61    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+61-->[me.leolin:ShortcutBadger:1.1.22] /home/midnight/.gradle/caches/transforms-3/fa3ee9ef68932b9e2c37798d20dfe55d/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:5-91
+61-->[me.leolin:ShortcutBadger:1.1.22] /home/midnight/.gradle/caches/transforms-3/fa3ee9ef68932b9e2c37798d20dfe55d/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:22-88
+62    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+62-->[me.leolin:ShortcutBadger:1.1.22] /home/midnight/.gradle/caches/transforms-3/fa3ee9ef68932b9e2c37798d20dfe55d/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:5-92
+62-->[me.leolin:ShortcutBadger:1.1.22] /home/midnight/.gradle/caches/transforms-3/fa3ee9ef68932b9e2c37798d20dfe55d/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:22-89
+63    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+63-->[me.leolin:ShortcutBadger:1.1.22] /home/midnight/.gradle/caches/transforms-3/fa3ee9ef68932b9e2c37798d20dfe55d/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:5-93
+63-->[me.leolin:ShortcutBadger:1.1.22] /home/midnight/.gradle/caches/transforms-3/fa3ee9ef68932b9e2c37798d20dfe55d/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:22-90
+64    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+64-->[me.leolin:ShortcutBadger:1.1.22] /home/midnight/.gradle/caches/transforms-3/fa3ee9ef68932b9e2c37798d20dfe55d/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:5-73
+64-->[me.leolin:ShortcutBadger:1.1.22] /home/midnight/.gradle/caches/transforms-3/fa3ee9ef68932b9e2c37798d20dfe55d/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:22-70
+65    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+65-->[me.leolin:ShortcutBadger:1.1.22] /home/midnight/.gradle/caches/transforms-3/fa3ee9ef68932b9e2c37798d20dfe55d/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:5-82
+65-->[me.leolin:ShortcutBadger:1.1.22] /home/midnight/.gradle/caches/transforms-3/fa3ee9ef68932b9e2c37798d20dfe55d/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:22-79
+66    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+66-->[me.leolin:ShortcutBadger:1.1.22] /home/midnight/.gradle/caches/transforms-3/fa3ee9ef68932b9e2c37798d20dfe55d/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:5-83
+66-->[me.leolin:ShortcutBadger:1.1.22] /home/midnight/.gradle/caches/transforms-3/fa3ee9ef68932b9e2c37798d20dfe55d/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:22-80
+67    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+67-->[me.leolin:ShortcutBadger:1.1.22] /home/midnight/.gradle/caches/transforms-3/fa3ee9ef68932b9e2c37798d20dfe55d/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:5-88
+67-->[me.leolin:ShortcutBadger:1.1.22] /home/midnight/.gradle/caches/transforms-3/fa3ee9ef68932b9e2c37798d20dfe55d/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:22-85
+68    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+68-->[me.leolin:ShortcutBadger:1.1.22] /home/midnight/.gradle/caches/transforms-3/fa3ee9ef68932b9e2c37798d20dfe55d/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:5-89
+68-->[me.leolin:ShortcutBadger:1.1.22] /home/midnight/.gradle/caches/transforms-3/fa3ee9ef68932b9e2c37798d20dfe55d/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:22-86
+69
+70    <application
+71        android:name="android.app.Application"
+72        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+72-->[androidx.core:core:1.9.0] /home/midnight/.gradle/caches/transforms-3/50ac565c2d78ece85381646878fcb457/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+73        android:debuggable="true"
+74        android:icon="@mipmap/ic_launcher"
+75        android:label="shaligramgatekeeper" >
+76        <activity
+77            android:name="com.realtyx.shaligramgatekeeper.MainActivity"
+78            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+79            android:exported="true"
+80            android:hardwareAccelerated="true"
+81            android:launchMode="singleTop"
+82            android:theme="@style/LaunchTheme"
+83            android:windowSoftInputMode="adjustResize" >
+84
+85            <!--
+86                 Specifies an Android theme to apply to this Activity as soon as
+87                 the Android process has started. This theme is visible to the user
+88                 while the Flutter UI initializes. After that, this theme continues
+89                 to determine the Window background behind the Flutter UI.
+90            -->
+91
+92            <meta-data
+93                android:name="com.google.firebase.messaging.default_notification_channel_id"
+94                android:value="default" />
+95            <meta-data
+96                android:name="com.google.firebase.messaging.default_notification_icon"
+97                android:resource="@drawable/ic_launcher" />
+98            <meta-data
+99                android:name="io.flutter.embedding.android.NormalTheme"
+100                android:resource="@style/NormalTheme" />
+101
+102            <intent-filter>
+103                <action android:name="android.intent.action.MAIN" />
+104
+105                <category android:name="android.intent.category.LAUNCHER" />
+106            </intent-filter>
+107        </activity>
+108        <activity
+109            android:name="com.yalantis.ucrop.UCropActivity"
+110            android:screenOrientation="portrait"
+111            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+112        <!--
+113             Don't delete the meta-data below.
+114             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+115        -->
+116        <meta-data
+117            android:name="flutterEmbedding"
+118            android:value="2" />
+119
+120        <service
+120-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:14:9-17:72
+121            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+121-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-107
+122            android:exported="false"
+122-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-37
+123            android:permission="android.permission.BIND_JOB_SERVICE" />
+123-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-69
+124        <service
+124-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-24:19
+125            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+125-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-97
+126            android:exported="false" >
+126-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-37
+127            <intent-filter>
+127-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-23:29
+128                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+128-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:22:17-78
+128-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:22:25-75
+129            </intent-filter>
+130        </service>
+131
+132        <receiver
+132-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:26:9-33:20
+133            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+133-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-98
+134            android:exported="true"
+134-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-36
+135            android:permission="com.google.android.c2dm.permission.SEND" >
+135-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-73
+136            <intent-filter>
+136-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-32:29
+137                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+137-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:31:17-81
+137-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:31:25-78
+138            </intent-filter>
+139        </receiver>
+140
+141        <service
+141-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:35:9-39:19
+142            android:name="com.google.firebase.components.ComponentDiscoveryService"
+142-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:35:18-89
+143            android:directBootAware="true"
+143-->[com.google.firebase:firebase-common:20.3.0] /home/midnight/.gradle/caches/transforms-3/17f61bb9398e1f5c13b56fc5aeeddc14/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:34:13-43
+144            android:exported="false" >
+144-->[com.google.firebase:firebase-analytics-ktx:21.2.0] /home/midnight/.gradle/caches/transforms-3/0131fc0741f18b1316f82d5c3c63e061/transformed/jetified-firebase-analytics-ktx-21.2.0/AndroidManifest.xml:10:13-37
+145            <meta-data
+145-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:36:13-38:85
+146                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+146-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:37:17-128
+147                android:value="com.google.firebase.components.ComponentRegistrar" />
+147-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:38:17-82
+148            <meta-data
+148-->[:firebase_core] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+149                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+149-->[:firebase_core] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
+150                android:value="com.google.firebase.components.ComponentRegistrar" />
+150-->[:firebase_core] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+151            <meta-data
+151-->[com.google.firebase:firebase-analytics-ktx:21.2.0] /home/midnight/.gradle/caches/transforms-3/0131fc0741f18b1316f82d5c3c63e061/transformed/jetified-firebase-analytics-ktx-21.2.0/AndroidManifest.xml:11:13-13:85
+152                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
+152-->[com.google.firebase:firebase-analytics-ktx:21.2.0] /home/midnight/.gradle/caches/transforms-3/0131fc0741f18b1316f82d5c3c63e061/transformed/jetified-firebase-analytics-ktx-21.2.0/AndroidManifest.xml:12:17-126
+153                android:value="com.google.firebase.components.ComponentRegistrar" />
+153-->[com.google.firebase:firebase-analytics-ktx:21.2.0] /home/midnight/.gradle/caches/transforms-3/0131fc0741f18b1316f82d5c3c63e061/transformed/jetified-firebase-analytics-ktx-21.2.0/AndroidManifest.xml:13:17-82
+154            <meta-data
+154-->[com.google.firebase:firebase-common-ktx:20.3.0] /home/midnight/.gradle/caches/transforms-3/49e24fbc43ca8d91b086670d3cb456c6/transformed/jetified-firebase-common-ktx-20.3.0/AndroidManifest.xml:14:13-16:85
+155                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+155-->[com.google.firebase:firebase-common-ktx:20.3.0] /home/midnight/.gradle/caches/transforms-3/49e24fbc43ca8d91b086670d3cb456c6/transformed/jetified-firebase-common-ktx-20.3.0/AndroidManifest.xml:15:17-113
+156                android:value="com.google.firebase.components.ComponentRegistrar" />
+156-->[com.google.firebase:firebase-common-ktx:20.3.0] /home/midnight/.gradle/caches/transforms-3/49e24fbc43ca8d91b086670d3cb456c6/transformed/jetified-firebase-common-ktx-20.3.0/AndroidManifest.xml:16:17-82
+157            <meta-data
+157-->[com.google.firebase:firebase-messaging:23.1.1] /home/midnight/.gradle/caches/transforms-3/66de4305226ff0cb8bffa4b4ba4a8b75/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:55:13-57:85
+158                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+158-->[com.google.firebase:firebase-messaging:23.1.1] /home/midnight/.gradle/caches/transforms-3/66de4305226ff0cb8bffa4b4ba4a8b75/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:56:17-119
+159                android:value="com.google.firebase.components.ComponentRegistrar" />
+159-->[com.google.firebase:firebase-messaging:23.1.1] /home/midnight/.gradle/caches/transforms-3/66de4305226ff0cb8bffa4b4ba4a8b75/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:57:17-82
+160            <meta-data
+160-->[com.google.firebase:firebase-datatransport:18.1.7] /home/midnight/.gradle/caches/transforms-3/3cf916311ea46cca191077538f98d969/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:27:13-29:85
+161                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+161-->[com.google.firebase:firebase-datatransport:18.1.7] /home/midnight/.gradle/caches/transforms-3/3cf916311ea46cca191077538f98d969/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:28:17-115
+162                android:value="com.google.firebase.components.ComponentRegistrar" />
+162-->[com.google.firebase:firebase-datatransport:18.1.7] /home/midnight/.gradle/caches/transforms-3/3cf916311ea46cca191077538f98d969/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:29:17-82
+163            <meta-data
+163-->[com.google.android.gms:play-services-measurement-api:21.2.0] /home/midnight/.gradle/caches/transforms-3/9fe8d1b46c71e9b954a639d6f927ec09/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:31:13-33:85
+164                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+164-->[com.google.android.gms:play-services-measurement-api:21.2.0] /home/midnight/.gradle/caches/transforms-3/9fe8d1b46c71e9b954a639d6f927ec09/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:32:17-139
+165                android:value="com.google.firebase.components.ComponentRegistrar" />
+165-->[com.google.android.gms:play-services-measurement-api:21.2.0] /home/midnight/.gradle/caches/transforms-3/9fe8d1b46c71e9b954a639d6f927ec09/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:33:17-82
+166            <meta-data
+166-->[com.google.firebase:firebase-installations:17.1.2] /home/midnight/.gradle/caches/transforms-3/f7ca06f63c0030499ca3661ec9c77550/transformed/jetified-firebase-installations-17.1.2/AndroidManifest.xml:17:13-19:85
+167                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+167-->[com.google.firebase:firebase-installations:17.1.2] /home/midnight/.gradle/caches/transforms-3/f7ca06f63c0030499ca3661ec9c77550/transformed/jetified-firebase-installations-17.1.2/AndroidManifest.xml:18:17-127
+168                android:value="com.google.firebase.components.ComponentRegistrar" />
+168-->[com.google.firebase:firebase-installations:17.1.2] /home/midnight/.gradle/caches/transforms-3/f7ca06f63c0030499ca3661ec9c77550/transformed/jetified-firebase-installations-17.1.2/AndroidManifest.xml:19:17-82
+169        </service>
+170
+171        <provider
+171-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:41:9-45:38
+172            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+172-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:42:13-102
+173            android:authorities="com.realtyx.shaligramgatekeeper.flutterfirebasemessaginginitprovider"
+173-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:43:13-88
+174            android:exported="false"
+174-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:44:13-37
+175            android:initOrder="99" />
+175-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:45:13-35
+176        <provider
+176-->[:image_picker_android] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
+177            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+177-->[:image_picker_android] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-82
+178            android:authorities="com.realtyx.shaligramgatekeeper.flutter.image_provider"
+178-->[:image_picker_android] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-74
+179            android:exported="false"
+179-->[:image_picker_android] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
+180            android:grantUriPermissions="true" >
+180-->[:image_picker_android] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
+181            <meta-data
+181-->[:image_picker_android] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:75
+182                android:name="android.support.FILE_PROVIDER_PATHS"
+182-->[:image_picker_android] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
+183                android:resource="@xml/flutter_image_picker_file_paths" />
+183-->[:image_picker_android] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-72
+184        </provider>
+185
+186        <receiver
+186-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:13:9-15:40
+187            android:name="me.carda.awesome_notifications.notifications.broadcastReceivers.DismissedNotificationReceiver"
+187-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-121
+188            android:exported="false" />
+188-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-37
+189        <receiver
+189-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-18:40
+190            android:name="me.carda.awesome_notifications.notifications.broadcastReceivers.ScheduledNotificationReceiver"
+190-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-121
+191            android:exported="false" />
+191-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
+192        <receiver
+192-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-21:40
+193            android:name="me.carda.awesome_notifications.notifications.broadcastReceivers.KeepOnTopActionReceiver"
+193-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-115
+194            android:exported="false" />
+194-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-37
+195        <receiver
+195-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:22:9-35:20
+196            android:name="me.carda.awesome_notifications.notifications.broadcastReceivers.RefreshSchedulesReceiver"
+196-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-116
+197            android:exported="false" >
+197-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-37
+198            <intent-filter>
+198-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-34:29
+199                <category android:name="android.intent.category.DEFAULT" />
+199-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:17-76
+199-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:27-73
+200
+201                <action android:name="android.intent.action.BOOT_COMPLETED" />
+201-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:28:17-79
+201-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:28:25-76
+202                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+202-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-86
+202-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:25-83
+203                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+203-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:30:17-84
+203-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:30:25-81
+204                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+204-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:31:17-82
+204-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:31:25-79
+205                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+205-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:32:17-82
+205-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:32:25-79
+206                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED" />
+206-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:33:17-107
+206-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:33:25-104
+207            </intent-filter>
+208        </receiver>
+209        <receiver
+209-->[:flutter_local_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-18:40
+210            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+210-->[:flutter_local_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-97
+211            android:exported="false" />
+211-->[:flutter_local_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
+212        <receiver
+212-->[:flutter_local_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-28:20
+213            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+213-->[:flutter_local_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-101
+214            android:exported="false" >
+214-->[:flutter_local_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-37
+215            <intent-filter>
+215-->[:flutter_local_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-27:29
+216                <action android:name="android.intent.action.BOOT_COMPLETED" />
+216-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:28:17-79
+216-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:28:25-76
+217                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+217-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:30:17-84
+217-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:30:25-81
+218                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+218-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:31:17-82
+218-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:31:25-79
+219                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+219-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:32:17-82
+219-->[:awesome_notifications] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:32:25-79
+220            </intent-filter>
+221        </receiver>
+222
+223        <activity
+223-->[:url_launcher_android] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-13:74
+224            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+224-->[:url_launcher_android] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-74
+225            android:exported="false"
+225-->[:url_launcher_android] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-37
+226            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+226-->[:url_launcher_android] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-71
+227
+228        <receiver
+228-->[com.google.firebase:firebase-messaging:23.1.1] /home/midnight/.gradle/caches/transforms-3/66de4305226ff0cb8bffa4b4ba4a8b75/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:31:9-38:20
+229            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+229-->[com.google.firebase:firebase-messaging:23.1.1] /home/midnight/.gradle/caches/transforms-3/66de4305226ff0cb8bffa4b4ba4a8b75/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:32:13-78
+230            android:exported="true"
+230-->[com.google.firebase:firebase-messaging:23.1.1] /home/midnight/.gradle/caches/transforms-3/66de4305226ff0cb8bffa4b4ba4a8b75/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:33:13-36
+231            android:permission="com.google.android.c2dm.permission.SEND" >
+231-->[com.google.firebase:firebase-messaging:23.1.1] /home/midnight/.gradle/caches/transforms-3/66de4305226ff0cb8bffa4b4ba4a8b75/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:34:13-73
+232            <intent-filter>
+232-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-32:29
+233                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+233-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:31:17-81
+233-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:31:25-78
+234            </intent-filter>
+235        </receiver>
+236        <!--
+237             FirebaseMessagingService performs security checks at runtime,
+238             but set to not exported to explicitly avoid allowing another app to call it.
+239        -->
+240        <service
+240-->[com.google.firebase:firebase-messaging:23.1.1] /home/midnight/.gradle/caches/transforms-3/66de4305226ff0cb8bffa4b4ba4a8b75/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:44:9-51:19
+241            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+241-->[com.google.firebase:firebase-messaging:23.1.1] /home/midnight/.gradle/caches/transforms-3/66de4305226ff0cb8bffa4b4ba4a8b75/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:45:13-82
+242            android:directBootAware="true"
+242-->[com.google.firebase:firebase-messaging:23.1.1] /home/midnight/.gradle/caches/transforms-3/66de4305226ff0cb8bffa4b4ba4a8b75/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:46:13-43
+243            android:exported="false" >
+243-->[com.google.firebase:firebase-messaging:23.1.1] /home/midnight/.gradle/caches/transforms-3/66de4305226ff0cb8bffa4b4ba4a8b75/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:47:13-37
+244            <intent-filter android:priority="-500" >
+244-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-23:29
+245                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+245-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:22:17-78
+245-->[:firebase_messaging] /home/midnight/Flutter_Projects/shaligramgatekeeper/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:22:25-75
+246            </intent-filter>
+247        </service>
+248
+249        <provider
+249-->[com.google.firebase:firebase-common:20.3.0] /home/midnight/.gradle/caches/transforms-3/17f61bb9398e1f5c13b56fc5aeeddc14/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:25:9-30:39
+250            android:name="com.google.firebase.provider.FirebaseInitProvider"
+250-->[com.google.firebase:firebase-common:20.3.0] /home/midnight/.gradle/caches/transforms-3/17f61bb9398e1f5c13b56fc5aeeddc14/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:26:13-77
+251            android:authorities="com.realtyx.shaligramgatekeeper.firebaseinitprovider"
+251-->[com.google.firebase:firebase-common:20.3.0] /home/midnight/.gradle/caches/transforms-3/17f61bb9398e1f5c13b56fc5aeeddc14/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:27:13-72
+252            android:directBootAware="true"
+252-->[com.google.firebase:firebase-common:20.3.0] /home/midnight/.gradle/caches/transforms-3/17f61bb9398e1f5c13b56fc5aeeddc14/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:28:13-43
+253            android:exported="false"
+253-->[com.google.firebase:firebase-common:20.3.0] /home/midnight/.gradle/caches/transforms-3/17f61bb9398e1f5c13b56fc5aeeddc14/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:29:13-37
+254            android:initOrder="100" />
+254-->[com.google.firebase:firebase-common:20.3.0] /home/midnight/.gradle/caches/transforms-3/17f61bb9398e1f5c13b56fc5aeeddc14/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:30:13-36
+255
+256        <activity
+256-->[com.google.android.gms:play-services-base:18.0.1] /home/midnight/.gradle/caches/transforms-3/27ed75583d8888cfd149af38bb71ea35/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+257            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+257-->[com.google.android.gms:play-services-base:18.0.1] /home/midnight/.gradle/caches/transforms-3/27ed75583d8888cfd149af38bb71ea35/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+258            android:exported="false"
+258-->[com.google.android.gms:play-services-base:18.0.1] /home/midnight/.gradle/caches/transforms-3/27ed75583d8888cfd149af38bb71ea35/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+259            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+259-->[com.google.android.gms:play-services-base:18.0.1] /home/midnight/.gradle/caches/transforms-3/27ed75583d8888cfd149af38bb71ea35/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+260
+261        <receiver
+261-->[com.google.android.gms:play-services-measurement:21.2.0] /home/midnight/.gradle/caches/transforms-3/847b32b408afbc752888409c4ca8a94a/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:29:9-33:20
+262            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+262-->[com.google.android.gms:play-services-measurement:21.2.0] /home/midnight/.gradle/caches/transforms-3/847b32b408afbc752888409c4ca8a94a/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:30:13-85
+263            android:enabled="true"
+263-->[com.google.android.gms:play-services-measurement:21.2.0] /home/midnight/.gradle/caches/transforms-3/847b32b408afbc752888409c4ca8a94a/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:31:13-35
+264            android:exported="false" >
+264-->[com.google.android.gms:play-services-measurement:21.2.0] /home/midnight/.gradle/caches/transforms-3/847b32b408afbc752888409c4ca8a94a/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:32:13-37
+265        </receiver>
+266
+267        <service
+267-->[com.google.android.gms:play-services-measurement:21.2.0] /home/midnight/.gradle/caches/transforms-3/847b32b408afbc752888409c4ca8a94a/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:35:9-38:40
+268            android:name="com.google.android.gms.measurement.AppMeasurementService"
+268-->[com.google.android.gms:play-services-measurement:21.2.0] /home/midnight/.gradle/caches/transforms-3/847b32b408afbc752888409c4ca8a94a/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:36:13-84
+269            android:enabled="true"
+269-->[com.google.android.gms:play-services-measurement:21.2.0] /home/midnight/.gradle/caches/transforms-3/847b32b408afbc752888409c4ca8a94a/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:37:13-35
+270            android:exported="false" />
+270-->[com.google.android.gms:play-services-measurement:21.2.0] /home/midnight/.gradle/caches/transforms-3/847b32b408afbc752888409c4ca8a94a/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:38:13-37
+271        <service
+271-->[com.google.android.gms:play-services-measurement:21.2.0] /home/midnight/.gradle/caches/transforms-3/847b32b408afbc752888409c4ca8a94a/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:39:9-43:72
+272            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+272-->[com.google.android.gms:play-services-measurement:21.2.0] /home/midnight/.gradle/caches/transforms-3/847b32b408afbc752888409c4ca8a94a/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:40:13-87
+273            android:enabled="true"
+273-->[com.google.android.gms:play-services-measurement:21.2.0] /home/midnight/.gradle/caches/transforms-3/847b32b408afbc752888409c4ca8a94a/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:41:13-35
+274            android:exported="false"
+274-->[com.google.android.gms:play-services-measurement:21.2.0] /home/midnight/.gradle/caches/transforms-3/847b32b408afbc752888409c4ca8a94a/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:42:13-37
+275            android:permission="android.permission.BIND_JOB_SERVICE" />
+275-->[com.google.android.gms:play-services-measurement:21.2.0] /home/midnight/.gradle/caches/transforms-3/847b32b408afbc752888409c4ca8a94a/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:43:13-69
+276
+277        <meta-data
+277-->[com.google.android.gms:play-services-basement:18.1.0] /home/midnight/.gradle/caches/transforms-3/4c5cefc4bced38f73a0cc4404fde07b9/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+278            android:name="com.google.android.gms.version"
+278-->[com.google.android.gms:play-services-basement:18.1.0] /home/midnight/.gradle/caches/transforms-3/4c5cefc4bced38f73a0cc4404fde07b9/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+279            android:value="@integer/google_play_services_version" />
+279-->[com.google.android.gms:play-services-basement:18.1.0] /home/midnight/.gradle/caches/transforms-3/4c5cefc4bced38f73a0cc4404fde07b9/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+280
+281        <uses-library
+281-->[androidx.window:window:1.0.0-beta04] /home/midnight/.gradle/caches/transforms-3/36a45b2abb854eca36c578fbec6ed4df/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+282            android:name="androidx.window.extensions"
+282-->[androidx.window:window:1.0.0-beta04] /home/midnight/.gradle/caches/transforms-3/36a45b2abb854eca36c578fbec6ed4df/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+283            android:required="false" />
+283-->[androidx.window:window:1.0.0-beta04] /home/midnight/.gradle/caches/transforms-3/36a45b2abb854eca36c578fbec6ed4df/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+284        <uses-library
+284-->[androidx.window:window:1.0.0-beta04] /home/midnight/.gradle/caches/transforms-3/36a45b2abb854eca36c578fbec6ed4df/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+285            android:name="androidx.window.sidecar"
+285-->[androidx.window:window:1.0.0-beta04] /home/midnight/.gradle/caches/transforms-3/36a45b2abb854eca36c578fbec6ed4df/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+286            android:required="false" />
+286-->[androidx.window:window:1.0.0-beta04] /home/midnight/.gradle/caches/transforms-3/36a45b2abb854eca36c578fbec6ed4df/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+287
+288        <service
+288-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/midnight/.gradle/caches/transforms-3/b575f61dd6993583ac7c69c3796215af/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:28:9-34:19
+289            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+289-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/midnight/.gradle/caches/transforms-3/b575f61dd6993583ac7c69c3796215af/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:29:13-103
+290            android:exported="false" >
+290-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/midnight/.gradle/caches/transforms-3/b575f61dd6993583ac7c69c3796215af/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:30:13-37
+291            <meta-data
+291-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/midnight/.gradle/caches/transforms-3/b575f61dd6993583ac7c69c3796215af/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:31:13-33:39
+292                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+292-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/midnight/.gradle/caches/transforms-3/b575f61dd6993583ac7c69c3796215af/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:32:17-94
+293                android:value="cct" />
+293-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/midnight/.gradle/caches/transforms-3/b575f61dd6993583ac7c69c3796215af/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:33:17-36
+294        </service>
+295        <service
+295-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/midnight/.gradle/caches/transforms-3/2f15c8034f6aea8b10122d8249b4c9b9/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:26:9-30:19
+296            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+296-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/midnight/.gradle/caches/transforms-3/2f15c8034f6aea8b10122d8249b4c9b9/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:27:13-117
+297            android:exported="false"
+297-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/midnight/.gradle/caches/transforms-3/2f15c8034f6aea8b10122d8249b4c9b9/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:28:13-37
+298            android:permission="android.permission.BIND_JOB_SERVICE" >
+298-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/midnight/.gradle/caches/transforms-3/2f15c8034f6aea8b10122d8249b4c9b9/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:29:13-69
+299        </service>
+300
+301        <receiver
+301-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/midnight/.gradle/caches/transforms-3/2f15c8034f6aea8b10122d8249b4c9b9/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:32:9-34:40
+302            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+302-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/midnight/.gradle/caches/transforms-3/2f15c8034f6aea8b10122d8249b4c9b9/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:33:13-132
+303            android:exported="false" />
+303-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/midnight/.gradle/caches/transforms-3/2f15c8034f6aea8b10122d8249b4c9b9/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:34:13-37
+304
+305        <provider
+305-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/midnight/.gradle/caches/transforms-3/8e3b42a7f20b8000e35ca74f6b81645d/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+306            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+306-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/midnight/.gradle/caches/transforms-3/8e3b42a7f20b8000e35ca74f6b81645d/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+307            android:authorities="com.realtyx.shaligramgatekeeper.lifecycle-process"
+307-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/midnight/.gradle/caches/transforms-3/8e3b42a7f20b8000e35ca74f6b81645d/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+308            android:exported="false"
+308-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/midnight/.gradle/caches/transforms-3/8e3b42a7f20b8000e35ca74f6b81645d/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+309            android:multiprocess="true" />
+309-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/midnight/.gradle/caches/transforms-3/8e3b42a7f20b8000e35ca74f6b81645d/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+310    </application>
+311
+312</manifest>

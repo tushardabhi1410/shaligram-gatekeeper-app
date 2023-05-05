@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/midnight/Flutter_Projects/shaligramgatekeeper/build/image_cropper/intermediates/merged_res/release/drawable-ldpi-v4/ucrop_ic_angle.png",
+        "source": "/home/midnight/.gradle/caches/transforms-3/308776c8f80726265db5c7f82697076c/transformed/jetified-ucrop-2.2.8/res/drawable-ldpi-v4/ucrop_ic_angle.png"
+    },
+    {
+        "merged": "/home/midnight/Flutter_Projects/shaligramgatekeeper/build/image_cropper/intermediates/merged_res/release/drawable-ldpi-v4/ucrop_ic_done.png",
+        "source": "/home/midnight/.gradle/caches/transforms-3/308776c8f80726265db5c7f82697076c/transformed/jetified-ucrop-2.2.8/res/drawable-ldpi-v4/ucrop_ic_done.png"
+    }
+]

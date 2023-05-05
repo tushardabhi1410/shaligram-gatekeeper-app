@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "360210005452",
+    "firebase_url": "https://shaligramgroup-6c523.firebaseio.com",
+    "project_id": "shaligramgroup-6c523",
+    "storage_bucket": "shaligramgroup-6c523.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360210005452:android:78f0cba2a28c27af20b169",
+        "android_client_info": {
+          "package_name": "com.realtyx.shaligramgatekeeper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "360210005452-krq1k3uh0mab2tplqjhksdeb9sirfr9c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDB8naAYwhPsTcZMEDvBk4KNhHMTIUQbdE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "360210005452-krq1k3uh0mab2tplqjhksdeb9sirfr9c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "360210005452-3qv4bufdr4rfmn50f4ei7uhqr9fgsa1i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.realtyx.shaligramgroup"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360210005452:android:19c541764004d70920b169",
+        "android_client_info": {
+          "package_name": "com.realtyx.shaligramgroup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "360210005452-krq1k3uh0mab2tplqjhksdeb9sirfr9c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDB8naAYwhPsTcZMEDvBk4KNhHMTIUQbdE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "360210005452-krq1k3uh0mab2tplqjhksdeb9sirfr9c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "360210005452-3qv4bufdr4rfmn50f4ei7uhqr9fgsa1i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.realtyx.shaligramgroup"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
