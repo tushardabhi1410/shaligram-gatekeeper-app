@@ -35,7 +35,7 @@ class DeviceData {
 
       await firebaseMessaging!.getToken(vapidKey: "").then((value) {
         deviceID = value!;
-        print('deviceId = $deviceID');
+        print('DEVICE_ID=====================================> $deviceID');
       });
 
 
@@ -73,5 +73,4 @@ class DeviceData {
 
     return deviceData;
   }
-
 }

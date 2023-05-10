@@ -89,7 +89,7 @@ class _DirectoryState extends State<DirectoryPage> with WidgetsBindingObserver {
                           // }, icon: Image.asset("assets/images/deshbord_heder1.png",color: AppColors.BLACK,)),
                           //
                           Padding(
-                            padding: EdgeInsets.all(0.w),
+                            padding: EdgeInsets.only(left: 10),
                             child: Image.asset(
                               APP_LOGO_NEW,
                               height: 80,

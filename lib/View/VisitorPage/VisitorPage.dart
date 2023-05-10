@@ -319,7 +319,7 @@ class _VisitorState extends State<VisitorPage> {
                         // ),
                         SimpleTextFieldNewwithcustomization(
                           inputformat: [UpperCaseTextFormatter()],
-                          hintText: "9658",
+                          hintText: "GJ01AB1234",
                           textCapitalization: TextCapitalization.sentences,
                           controller: cnt_Visitor.txt_vehicle,
                           textInputType: TextInputType.name,

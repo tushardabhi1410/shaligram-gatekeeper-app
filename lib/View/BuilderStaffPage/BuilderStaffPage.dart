@@ -247,7 +247,7 @@ class _BuilderStaffState extends State<BuilderStaffPage> with WidgetsBindingObse
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Padding(
-                          padding: EdgeInsets.all(0.w),
+                          padding: EdgeInsets.only(left: 10),
                           child: Image.asset(
                             APP_LOGO_NEW,
                             height: 80,
