@@ -193,7 +193,7 @@ class _VisitorState extends State<VisitorPage> {
                         // ),
 
                         SimpleTextFieldNewwithcustomization(
-                          inputformat: [UpperCaseTextFormatter()],
+                          //inputformat: [UpperCaseTextFormatter()],
                           hintText: "John",
                           maxLength: 72,
                           textCapitalization: TextCapitalization.sentences,
@@ -318,7 +318,7 @@ class _VisitorState extends State<VisitorPage> {
                         //   validator: cnt_Visitor.validationvehical,
                         // ),
                         SimpleTextFieldNewwithcustomization(
-                          inputformat: [UpperCaseTextFormatter()],
+                          //inputformat: [UpperCaseTextFormatter()],
                           hintText: "GJ01AB1234",
                           textCapitalization: TextCapitalization.sentences,
                           controller: cnt_Visitor.txt_vehicle,
@@ -338,7 +338,7 @@ class _VisitorState extends State<VisitorPage> {
                         //
                         // ),
                         SimpleTextFieldNewwithcustomization(
-                          inputformat: [UpperCaseTextFormatter()],
+                          //inputformat: [UpperCaseTextFormatter()],
                           hintText: "notes",
                           textCapitalization: TextCapitalization.sentences,
                           controller: cnt_Visitor.txt_note,
@@ -497,12 +497,9 @@ class _VisitorState extends State<VisitorPage> {
                                 ? cnt_Visitor.isocode.toString().toUpperCase()
                                 : "IN",
                             onChanged: (CountryCode code) {
-                              print(code
-                                  .name); //get the country name eg: Antarctica
-                              print(code
-                                  .code); //get the country code like AQ for Antarctica
-                              print(code
-                                  .dialCode); //get the country dial code +672 for Antarctica
+                              print(code.name); //get the country name eg: Antarctica
+                              print(code.code); //get the country code like AQ for Antarctica
+                              print(code.dialCode); //get the country dial code +672 for Antarctica
                               print(code.flagUri);
                               setState(() {
                                 cnt_Visitor.isocode = code.code!;

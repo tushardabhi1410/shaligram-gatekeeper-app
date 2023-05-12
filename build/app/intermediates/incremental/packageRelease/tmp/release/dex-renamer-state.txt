@@ -1,4 +1,4 @@
-#Mon May 08 15:23:53 IST 2023
+#Fri May 12 15:05:42 IST 2023
 base.0=/home/midnight/Flutter_Projects/shaligramgatekeeper/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

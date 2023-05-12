@@ -44,7 +44,7 @@ void main() async {
 
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
 
-  runApp(MyApp(title: "Shaligram"));
+  runApp(MyApp(title: "Gatekeeper"));
 }
 
 class MyApp extends StatefulWidget {

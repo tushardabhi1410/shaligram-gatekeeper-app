@@ -1712,6 +1712,9 @@ class _BuilderStaffState extends State<BuilderStaffPage> with WidgetsBindingObse
             },
             itemCount: cnt_builder.arrBuilderStaffCheckInList.length,
           ),
+          SizedBox(
+            height: 350.h,
+          ),
         ],
       ),
     );
@@ -1918,8 +1921,9 @@ class _BuilderStaffState extends State<BuilderStaffPage> with WidgetsBindingObse
                     fontWeight: FontWeight.bold),
               ),
             );
-          } else {
-            return StaffShimmerEffect();
+          } else
+          {
+              return StaffShimmerEffect();
           }
         },
         future: cnt_builder.futurestaffCheckOutDataNew.value,

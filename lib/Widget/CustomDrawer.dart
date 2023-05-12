@@ -344,9 +344,9 @@ DrawerProjectModal obj=cnt_Drawer.arrProjectDrawerItemList[index];
             ),
               height: 40.w,
               child: ListTile(
-                title: Container(
-                  child: Padding(
-                    padding: const EdgeInsets.only(bottom: 10),
+                title: Padding(
+                  padding: const EdgeInsets.only(bottom: 15),
+                  child: Center(
                     child: Text(
                       // "Magneto Homes",
                       obj.name??"",
@@ -411,45 +411,45 @@ DrawerProjectModal obj=cnt_Drawer.arrProjectDrawerItemList[index];
           SizedBox(
             height: 30,
           ),
-          GestureDetector(
-            onTap: (){
-              Get.back();
-              Get.to(PrivacyPage());
-            },
-            child: Text(
-              "Privacy Policy",
-              style: TextStyles.textStyleLight14(),
-            ),
-          ),
-          SizedBox(
-            height: 10.w,
-          ),
-          GestureDetector(
-            onTap: (){
-              Get.back();
-              Get.to(TermsAndConditionPage());
-            },
-            child: Text(
-              "T & C",
-              style: TextStyles.textStyleLight14(),
-            ),
-          ),
-          SizedBox(
-            height: 10.w,
-          ),
-          Text(
-            "Disclaimer",
-            style: TextStyles.textStyleLight14(),
-          ),
-          SizedBox(
-            height: 10.w,
-          ),
-          Obx(() {
-            return Text(
-              "App Version ${cnt_Drawer.appVersion.value}",
-              style: TextStyles.textStyleLight14(),
-            );
-          })
+          // GestureDetector(
+          //   onTap: (){
+          //     Get.back();
+          //     Get.to(PrivacyPage());
+          //   },
+          //   child: Text(
+          //     "Privacy Policy",
+          //     style: TextStyles.textStyleLight14(),
+          //   ),
+          // ),
+          // SizedBox(
+          //   height: 10.w,
+          // ),
+          // GestureDetector(
+          //   onTap: (){
+          //     Get.back();
+          //     Get.to(TermsAndConditionPage());
+          //   },
+          //   child: Text(
+          //     "T & C",
+          //     style: TextStyles.textStyleLight14(),
+          //   ),
+          // ),
+          // SizedBox(
+          //   height: 10.w,
+          // ),
+          // Text(
+          //   "Disclaimer",
+          //   style: TextStyles.textStyleLight14(),
+          // ),
+          // SizedBox(
+          //   height: 10.w,
+          // ),
+          // Obx(() {
+          //   return Text(
+          //     "App Version ${cnt_Drawer.appVersion.value}",
+          //     style: TextStyles.textStyleLight14(),
+          //   );
+          // }),
         ],
       ),
     );

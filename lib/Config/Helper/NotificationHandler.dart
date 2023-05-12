@@ -163,7 +163,7 @@ class NotificationHandler {
       importance: Importance.max,
       priority: Priority.high,
       icon: "ic_launcher",
-      color: AppColors.GREEN,
+      // color: AppColors.GREEN,
       tag: "your message is recived",
       styleInformation: BigTextStyleInformation(''),
     );
@@ -191,7 +191,7 @@ class NotificationHandler {
             importance: Importance.max,
             priority: Priority.high,
             icon: "ic_launcher",
-            color: AppColors.GREEN,
+            // color: AppColors.GREEN,
 
             styleInformation: bigPictureStyleInformation);
 
