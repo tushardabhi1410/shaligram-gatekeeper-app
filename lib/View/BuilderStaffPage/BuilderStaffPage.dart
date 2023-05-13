@@ -125,7 +125,9 @@ class _BuilderStaffState extends State<BuilderStaffPage> with WidgetsBindingObse
                   child: Container(
                     color: Colors.transparent,
                     padding: const EdgeInsets.all(14),
-                    child: const Text("Add New Builder Staff"),
+                    child: const Text("Add New Builder Staff",style: TextStyle(
+                      color: Color(0xffff266CB5),
+                    ),),
                   ),
                 ),
                 TextButton(
@@ -142,14 +144,16 @@ class _BuilderStaffState extends State<BuilderStaffPage> with WidgetsBindingObse
                   child: Container(
                     color: Colors.transparent,
                     padding: const EdgeInsets.all(14),
-                    child: const Text("Builder Staff Log"),
+                    child: const Text("Builder Staff Log",style: TextStyle(
+                      color: Color(0xffff266CB5),
+                    ),),
                   ),
                 ),
               ],
             ),
           );
         },child: Icon(Icons.add),
-            backgroundColor: Colors.blue),
+            backgroundColor: APP_THEME_COLOR),
         // SpeedDial(
         //
         //   icon: Icons.add,

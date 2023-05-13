@@ -362,7 +362,9 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                         child: Container(
                           color: Colors.transparent,
                           padding: const EdgeInsets.all(14),
-                          child: const Text("Visitor Log"),
+                          child: const Text("Visitor Log",style: TextStyle(
+                            color: Color(0xffff266CB5),
+                          ),),
                         ),
                       ),
                       TextButton(
@@ -378,7 +380,9 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                         child: Container(
                           color: Colors.transparent,
                           padding: const EdgeInsets.all(14),
-                          child: const Text("Visitor Check In"),
+                          child: const Text("Visitor Check In",style: TextStyle(
+                            color: Color(0xffff266CB5),
+                          ),),
                         ),
                       ),
                       TextButton(
@@ -394,7 +398,9 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                           child: Container(
                             color: Colors.transparent,
                             padding: const EdgeInsets.all(14),
-                            child: const Text("Vendor Check In"),
+                            child: const Text("Vendor Check In",style: TextStyle(
+                              color: Color(0xffff266CB5),
+                            ),),
                           ),
                         ),
                       ),
@@ -403,7 +409,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                 );
               },
               child: Icon(Icons.add),
-              backgroundColor: Colors.blue),
+              backgroundColor: APP_THEME_COLOR),
       appBar: AppBar(toolbarHeight: 0, elevation: 0),
       resizeToAvoidBottomInset: false,
       key: scaffoldKey,
