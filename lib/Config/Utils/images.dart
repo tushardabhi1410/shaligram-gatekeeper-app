@@ -18,5 +18,6 @@ String HOME_ICON_SVG = "assets/icons/home.svg";
 String BUILDER_STAFF_ICON_SVG = "assets/icons/builderstaff.svg";
 String DIRECTORY_ICON_SVG = "assets/icons/directory.svg";
 String IMG_VERFICATION_PENDING = "assets/images/verification.png";
+String NO_CONNECTION = "assets/images/no_connection.png";
 
 

@@ -1,3 +1,6 @@
+import 'dart:async';
+import 'dart:io';
+
 import 'package:avinashgatekeeper/Config/Helper/SizeConfige.dart';
 import 'package:avinashgatekeeper/Config/Utils/Style.dart';
 import 'package:avinashgatekeeper/Config/Utils/color.dart';
@@ -12,6 +15,7 @@ import 'package:avinashgatekeeper/Widget/CustomDrawer.dart';
 import 'package:avinashgatekeeper/Widget/RefreshIndicatorWidget.dart';
 import 'package:avinashgatekeeper/Widget/ShimmerWidget.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
@@ -34,6 +38,10 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
   HomePageController cnt_Home = Get.put(HomePageController());
   GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
   ScrollController scrollController = ScrollController();
+  ConnectivityResult _connectionStatus = ConnectivityResult.none;
+  final Connectivity _connectivity = Connectivity();
+  late StreamSubscription<ConnectivityResult> _connectivitySubscription;
+  RxBool showHideDlg = false.obs;
 
   var renderOverlay = true;
   var visible = true;
@@ -51,6 +59,8 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
 
   @override
   void initState() {
+    initConnectivity();
+    _connectivitySubscription = _connectivity.onConnectivityChanged.listen(_updateConnectionStatus);
     cnt_Home.selected.value = 0;
     cnt_Home.stopWatchTimer.clearPresetTime();
     cnt_Home.stopWatchTimer.onResetTimer();
@@ -71,6 +81,165 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
   void didChangeAppLifecycleState(AppLifecycleState state) {
     super.didChangeAppLifecycleState(state);
     print(state);
+  }
+
+  Future<void> initConnectivity() async {
+    late ConnectivityResult result;
+    // Platform messages may fail, so we use a try/catch PlatformException.
+    try {
+      result = await _connectivity.checkConnectivity();
+    } on Exception catch (e) {
+      print('Couldn\'t check connectivity status * * $e');
+      // developer.log('Couldn\'t check connectivity status', error: e);
+      return;
+    }
+
+    // If the widget was removed from the tree while the asynchronous platform
+    // message was in flight, we want to discard the reply rather than calling
+    // setState to update our non-existent appearance.
+    if (!mounted) {
+      return Future.value(null);
+    }
+
+    return _updateConnectionStatus(result);
+  }
+
+  Future<void> _updateConnectionStatus(ConnectivityResult result) async {
+    setState(() {
+      _connectionStatus = result;
+      print("CONNECTIONSTATUS************************** $_connectionStatus");
+      if (result == ConnectivityResult.none) {
+        print('_updateConnectionStatus * * Not connected to any network');
+        // ScaffoldMessenger.of(Get.context!)
+        //     .showSnackBar(SnackBar(content:  Text("Not connected to any network")));
+        // Future.delayed(Duration(seconds: 2), () {
+        // print('close * * * ');
+        if (!showHideDlg.value) {
+          showAlertDialog();
+        }
+        // Navigator.pop(contextBottomDialog!);
+        // Navigator.of(context).pop(true);
+        // });
+
+        // Get.offAll(NoConnectionPage());
+      } else {
+        print('_updateConnectionStatus * * Connected to a network');
+        // ScaffoldMessenger.of(Get.context!)
+        //     .showSnackBar(SnackBar(content:  Text("Connected to a network")));
+        if (showHideDlg.value) {
+          if (Platform.isAndroid) {
+            onRefresh();
+            // Restart.restartApp();
+            Get.back();
+            showHideDlg.value = false;
+          } else {
+            // Get.offAll(SplashScreen());
+            Get.back();
+          }
+          // showHideDlg.value = false;
+        }
+      }
+    });
+  }
+
+  Future<void> onRefresh() async {
+
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
+      cnt_Home.selected.value = 0;
+      cnt_Home.stopWatchTimer.clearPresetTime();
+      cnt_Home.stopWatchTimer.onResetTimer();
+      cnt_Home.LoadPage();
+      scrollController.addListener(() {
+        cnt_Home.scrollUpdate(scrollController);
+      });
+    });
+
+  }
+
+  void showAlertDialog() {
+    showHideDlg.value = true;
+    showDialog(
+      context: Get.context!,
+      barrierDismissible: false,
+      builder: (BuildContext context) {
+        return WillPopScope(
+          onWillPop: () async {
+            return false;
+          },
+          child: SimpleDialog(
+            backgroundColor: AppColors.TRANSPARENT,
+            children: [
+              Container(
+                width: Get.width,
+                padding: EdgeInsets.only(top: 20.w, bottom: 10.w, left: 10.w, right: 10.w),
+                // height: Get.height ,
+                decoration: BoxDecoration(
+                  border: Border.all(color: APP_THEME_COLOR),
+                  shape: BoxShape.rectangle,
+                  color: AppColors.WHITE,
+                  borderRadius: BorderRadius.all(Radius.circular(20)),
+                ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: <Widget>[
+                    ClipRRect(
+                      child: Image.asset(
+                        NO_CONNECTION,
+                        color: APP_THEME_COLOR,
+                        // color: AppColors.WHITE.withOpacity(0.7),
+                        height: 90.w,
+                        width: 80.w,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 20.w,
+                    ),
+                    Text(
+                      "No Internet Connection",
+                      style: TextStyle(
+                          color: APP_THEME_COLOR, fontSize: 18.0, fontWeight: FontWeight.w600),
+                      textAlign: TextAlign.center,
+                    ),
+                    SizedBox(
+                      height: 20.w,
+                    ),
+                    // Row(
+                    //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    //   children: [
+                    //
+                    //       Expanded(
+                    //         child: CustomButtons.WidgetButton(
+                    //             onTap: () {
+                    //               Navigator.pop(context);
+                    //             },
+                    //             child: Text(
+                    //               "Retry",
+                    //               style: TextStyle(
+                    //                   color: AppColors.WHITE,
+                    //                   fontSize: 13.sp,
+                    //                   fontWeight: FontWeight.w600),
+                    //             ),
+                    //             // height: Get.height,
+                    //             // width: Get.width,
+                    //             border:
+                    //             Border.all(color: AppColors.APP_THEME_DARK_COLOR, width: 3),
+                    //             shadowColor: Colors.white12,
+                    //             bgColor: AppColors.APP_THEME_COLOR,
+                    //             padding:
+                    //             EdgeInsets.only(left: 15, right: 15, top: 15, bottom: 15),
+                    //             margin: EdgeInsets.only(left: 5, right: 5),
+                    //             radius: 30),
+                    //       ),
+                    //   ],
+                    // )
+                  ],
+                ),
+              )
+            ],
+          ),
+        );
+      },
+    );
   }
 
   @override
