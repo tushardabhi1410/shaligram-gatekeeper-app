@@ -24,7 +24,8 @@ class FlatListPageController extends GetxController with SingleGetTickerProvider
 
 
 
-
+  RxInt _pageCount = 1.obs;
+  RxInt selected=0.obs;
   RxList<FlatChoicesModalWithCustomization> arrflatchoicelistnewstring = RxList<FlatChoicesModalWithCustomization>();
   RxList<Flats> arrflatchoicesublist = RxList<Flats>();
   RxString isFaqsEmptyMsg = "".obs;
@@ -32,22 +33,39 @@ class FlatListPageController extends GetxController with SingleGetTickerProvider
   Rx<Future<List<FlatChoicesModal>>> futureflatchoicelistDataNew = Future.value(<FlatChoicesModal>[]).obs;
   Rx<Future<List<FlatChoicesModalWithCustomization>>> futureflatchoicelistDatastring = Future.value(<FlatChoicesModalWithCustomization>[]).obs;
   Rx<Future<List<Flats>>> futureflatchoicesublistData = Future.value(<Flats>[]).obs;
-
+  Rxn<TextEditingController> editingController = Rxn(TextEditingController());
 
   LoadPage() {
     RetrieveFlatChoiceDataNew();
     futureflatchoicelistDataNew.refresh();
   }
 
+  onSearchTextChanged(String text) async {
+    _pageCount.value = 1;
 
-  RetrieveFlatChoiceDataNew() async {
+    if (text.isEmpty) {
+      if(selected.value==0){
+        RetrieveFlatChoiceDataNew();
+      }
+      return;
+    }
+    else{
+      if(selected.value==0){
+        RetrieveFlatChoiceDataNew(filter: text);
+      }
+    }
+  }
+
+
+  RetrieveFlatChoiceDataNew({String filter=''}) async {
     IsShimmerLoad.value=false;
    arrunitlistnew = RxList<VillaAndPlotAndUnitListModel>([]);
    arrplotlistnew = RxList<VillaAndPlotAndUnitListModel>([]);
    arrvillalistnew = RxList<VillaAndPlotAndUnitListModel>([]);
 
     Map<String, dynamic> data = {
-      "action":"listprojectdetails"
+      "action":"listprojectdetails",
+      if(filter!=null && filter!="")"filter":filter,
     };
     ApiResponse response = ApiResponse(
         requestType: RequestType.post,

@@ -33,6 +33,7 @@ class _FlatListState extends State<FlatListPage> with WidgetsBindingObserver {
   GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
   FlatListPageController cnt_Flat = Get.put(FlatListPageController());
 
+
   int _current_index = 0;
 
 
@@ -51,6 +52,8 @@ class _FlatListState extends State<FlatListPage> with WidgetsBindingObserver {
   void dispose() {
     super.dispose();
   }
+
+
 
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
@@ -131,11 +134,34 @@ class _FlatListState extends State<FlatListPage> with WidgetsBindingObserver {
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceBetween,
                                     children: [
-
                                       TextFormField(
                                         keyboardType: TextInputType.text,
                                         textInputAction: TextInputAction.done,
                                         cursorColor: AppColors.BLACK,
+                                        onChanged: (value) {
+                                          cnt_Flat.onSearchTextChanged(
+                                              cnt_Flat.editingController
+                                                  .value!.text);
+                                          setState(() {});
+                                        },
+                                        onFieldSubmitted: (value) {
+                                          setState(() {
+                                            cnt_Flat.onSearchTextChanged(
+                                                cnt_Flat.editingController
+                                                    .value!.text);
+                                            // get_member_list(_textsearch.text);
+                                          });
+                                          FocusScope.of(context).unfocus();
+                                        },
+                                        onEditingComplete: () {
+                                          setState(() {
+                                            cnt_Flat.onSearchTextChanged(
+                                                cnt_Flat.editingController
+                                                    .value!.text);
+                                          });
+                                          FocusScope.of(context).unfocus();
+                                          // get_allProduct_list(_textsearch.text);
+                                        },
                                         decoration: InputDecoration(
                                           counterText: "",
                                           contentPadding: EdgeInsets.symmetric(
@@ -165,7 +191,9 @@ class _FlatListState extends State<FlatListPage> with WidgetsBindingObserver {
                                               fontSize: 13.sp),
                                           suffixIcon: IconButton(
                                             icon: Icon(Icons.search, size: 30),
-                                            onPressed: () {},
+                                            onPressed: () {
+
+                                            },
                                           ),
                                         ),
                                       )
